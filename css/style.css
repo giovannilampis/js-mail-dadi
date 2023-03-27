@@ -17,3 +17,22 @@
 .debug {
     border: 1px solid red;
 }
+
+body {
+    background-color: whitesmoke;
+}
+
+#wrapper-email {
+    max-width: 50rem;
+    aspect-ratio: 3 / 1;
+    background-color: lightgoldenrodyellow;
+    margin: 3rem auto;
+
+}
+
+#wrapper-dice {
+    max-width: 50rem;
+    aspect-ratio: 3 / 1;
+    background-color: lightcyan;
+    margin: 3rem auto;
+}
