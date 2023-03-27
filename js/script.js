@@ -1,6 +1,6 @@
 "use strict"
 
-
+// EXERCISE 1
 
 // create mailing list
 
@@ -42,7 +42,7 @@ let checkEmail = function () {
 
         // a writing says the user is allowed to enter, as his / her email address is in the mailing list
 
-        document.getElementById("result").innerHTML = "Access is allowed, welcome to disneyland !"
+        document.getElementById("result").innerHTML = "Access is allowed, welcome to Las Vegas !"
 
     } else {
 
