@@ -39,10 +39,10 @@ let checkEmail = function () {
     }
 
     if(found == true) {
-        document.getElementById("result").innerHTML = "Complimenti, l'accesso ti è consentito !"
+        document.getElementById("result").innerHTML = "Access is allowed, welcome to disneyland !"
 
     } else {
-        document.getElementById("result").innerHTML = "Siamo spiacenti ma il tuo indirizzo email non è associato ad alcun iscritto"
+        document.getElementById("result").innerHTML = "Sorry but you can't enter because you don't know the magic word"
     }
 
 }
