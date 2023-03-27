@@ -69,20 +69,36 @@ throwDice.addEventListener("click", function() {
 
     console.log(userDiceThrow);
 
+    let userDiceImg = './images/dice' + userDiceThrow + '.png';
+
+    document.querySelectorAll('img')[0].setAttribute('src', userDiceImg)
+
     // computer's dice throw
 
     let computerDiceThrow = Math.floor(Math.random() * (6 - 1 + 1) + 1);
 
     console.log(computerDiceThrow);
 
+    let computerDiceImg = './images/dice' + computerDiceThrow + '.png';
+
+    document.querySelectorAll('img')[1].setAttribute('src', computerDiceImg);
+
+    // get the #result-dice element
+
+    let resultDice = document.getElementById("result-dice");
+
+
     // let us discover who is the winner
 
     if ( userDiceThrow > computerDiceThrow ) {
         console.log("Complimenti, hai vinto !");
+        resultDice.innerHTML = "Complimenti, hai vinto tu !"
     } else if ( computerDiceThrow > userDiceThrow ) {
         console.log("Siamo spiacenti, hai perso ");
+        resultDice.innerHTML = "Siamo spiacenti, questa volta hai perso !"
     } else {
         console.log("E' un pareggio !")
+        resultDice.innerHTML = "Che sfida avvincente, è un pareggio !"
     }
 
 
