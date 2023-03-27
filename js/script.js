@@ -92,13 +92,13 @@ throwDice.addEventListener("click", function() {
 
     if ( userDiceThrow > computerDiceThrow ) {
         console.log("Complimenti, hai vinto !");
-        resultDice.innerHTML = "Complimenti, hai vinto tu !"
+        resultDice.innerHTML = "Congratulations, you have won !"
     } else if ( computerDiceThrow > userDiceThrow ) {
         console.log("Siamo spiacenti, hai perso ");
-        resultDice.innerHTML = "Siamo spiacenti, questa volta hai perso !"
+        resultDice.innerHTML = "Sorry, this time you have lost !"
     } else {
         console.log("E' un pareggio !")
-        resultDice.innerHTML = "Che sfida avvincente, è un pareggio !"
+        resultDice.innerHTML = "What a thrilling challenge, it's a draw! !"
     }
 
 
