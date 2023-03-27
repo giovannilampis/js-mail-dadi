@@ -52,26 +52,39 @@ let checkEmail = function () {
 buttonEmail.addEventListener("click", checkEmail);
 
 
+
 // EXERCISE 2 : dice challenge against the computer
 
-// user's dice throw
+// get the button
 
-let userDiceThrow = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+let throwDice = document.getElementById("throw-dice");
 
-console.log(userDiceThrow);
+// add event listener
 
-// computer's dice throw
+throwDice.addEventListener("click", function() {
 
-let computerDiceThrow = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+    // user's dice throw
 
-console.log(computerDiceThrow);
+    let userDiceThrow = Math.floor(Math.random() * (6 - 1 + 1) + 1);
 
-// let us discover who is the winner
+    console.log(userDiceThrow);
 
-if ( userDiceThrow > computerDiceThrow ) {
-    console.log("Complimenti, hai vinto !");
-} else if ( computerDiceThrow > userDiceThrow ) {
-    console.log("Siamo spiacenti, hai perso ");
-} else {
-    console.log("E' un pareggio !")
-}
+    // computer's dice throw
+
+    let computerDiceThrow = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+
+    console.log(computerDiceThrow);
+
+    // let us discover who is the winner
+
+    if ( userDiceThrow > computerDiceThrow ) {
+        console.log("Complimenti, hai vinto !");
+    } else if ( computerDiceThrow > userDiceThrow ) {
+        console.log("Siamo spiacenti, hai perso ");
+    } else {
+        console.log("E' un pareggio !")
+    }
+
+
+})
+
