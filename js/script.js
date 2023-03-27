@@ -71,7 +71,9 @@ throwDice.addEventListener("click", function() {
 
     let userDiceImg = './images/dice' + userDiceThrow + '.png';
 
-    document.querySelectorAll('img')[0].setAttribute('src', userDiceImg)
+    document.getElementById("player-user").innerHTML = "You";
+
+    document.querySelectorAll('img')[0].setAttribute('src', userDiceImg);
 
     // computer's dice throw
 
@@ -80,6 +82,8 @@ throwDice.addEventListener("click", function() {
     console.log(computerDiceThrow);
 
     let computerDiceImg = './images/dice' + computerDiceThrow + '.png';
+
+    document.getElementById("player-computer").innerHTML = "Computer";
 
     document.querySelectorAll('img')[1].setAttribute('src', computerDiceImg);
 
