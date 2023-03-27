@@ -1,6 +1,6 @@
 "use strict"
 
-// EXERCISE 1 : CHECK EMAIL ADDRESS
+
 
 // create mailing list
 
@@ -18,9 +18,15 @@ const buttonEmail = document.getElementById("button-email");
 
 let checkEmail = function () {
 
+    // add the "small soldier" variable
+
     let found = false;
 
+    // the variable "user" expresses the email address enteret by the user
+
     let user = enteredEmail.value;
+
+    // use a for cycle, in order to discover wether the user's email address is in the mailing list or not
 
     for (let i = 0; i < allowedEmailAddresses.length; i++) {
 
@@ -41,5 +47,9 @@ let checkEmail = function () {
 
 }
 
+// add event listener
 
-buttonEmail.addEventListener("click", checkEmail)
+buttonEmail.addEventListener("click", checkEmail);
+
+
+// EXERCISE 2 : dice challenge against the computer
