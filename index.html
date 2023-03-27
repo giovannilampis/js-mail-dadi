@@ -14,24 +14,28 @@
 
     <section id="wrapper-email">
 
-        <p class="text-center display-5">Disneyland Login Area</p>
+        <div class="access-container">
 
-         <!-- input field for email address -->
+            <p class="text-center display-5 my-3">Disneyland Login Area</p>
 
-        <div>
-            <label for="user-email-address" class="mx-2">Access to the reserved area</label>
-            <input id="user-email-address" type="email" class="form-control" placeholder="Enter your email address">
+            <!-- input field for email address -->
+   
+           <div>
+               <label for="user-email-address" class="mx-2">Access to the reserved area</label>
+               <input id="user-email-address" type="email" class="form-control my-2" placeholder="Enter your email address">
+           </div>
+   
+           <!-- button to enter the email address -->
+   
+           <button id="button-email" type="submit" class="btn btn-info my-4">Access</button>
+   
+           <!-- here thewre will be a message with the result -->
+   
+           <p id="result" class="mx-2">
+               Find out wether you are allowed to enter or not
+           </p>
+
         </div>
-
-        <!-- button to enter the email address -->
-
-        <button id="button-email" type="submit" class="btn btn-info my-3">Access</button>
-
-        <!-- here thewre will be a message with the result -->
-
-        <p id="result" class="mx-2">
-            Find out wether you are allowed to enter or not
-        </p>
 
     </section>
 
@@ -41,7 +45,7 @@
 
         <p class="text-center display-5">Try your luck with D I C E 🎲 🎲</p>
 
-        <div class="game-box">
+        <div class="game-box d-flex justify-content-center align-items-center">
 
             <div id="user" class="dice-area">
 
@@ -57,11 +61,11 @@
     
             </div>
     
-            <button id="throw-dice" type="submit" class="btn btn-warning">GO !</button>
-
         </div>
 
-        <p class="text-center" id="result-dice"></p>
+        <button id="throw-dice" type="submit" class="btn btn-warning d-flex justify-content-center">GO !</button>
+
+        <p class="text-center my-2" id="result-dice"></p>
 
     </section>
 
