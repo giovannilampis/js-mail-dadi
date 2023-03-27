@@ -20,7 +20,7 @@ body {
 #wrapper-email {
     max-width: 60rem;
     aspect-ratio: 3 / 1;
-    background-color: lightgoldenrodyellow;
+    border: 2px solid green;
     margin: 3rem auto;
 
 }
