@@ -39,9 +39,15 @@ let checkEmail = function () {
     }
 
     if(found == true) {
+
+        // a writing says the user is allowed to enter, as his / her email address is in the mailing list
+
         document.getElementById("result").innerHTML = "Access is allowed, welcome to disneyland !"
 
     } else {
+
+        // a writing says the user is not allowed to enter, as his / her email address isn't in the mailing list
+
         document.getElementById("result").innerHTML = "Sorry but you can't enter because you don't know the magic word"
     }
 
@@ -63,27 +69,43 @@ let throwDice = document.getElementById("throw-dice");
 
 throwDice.addEventListener("click", function() {
 
-    // user's dice throw
+    // USER's dice throw
+
+    // get a random number (from 1 to 6) for the user's dice throw
 
     let userDiceThrow = Math.floor(Math.random() * (6 - 1 + 1) + 1);
 
     console.log(userDiceThrow);
 
+    // prepare the source to set for the img (user's dice) in the DOM
+
     let userDiceImg = './images/dice' + userDiceThrow + '.png';
+
+    // over the game dice, a writing says who's the player
 
     document.getElementById("player-user").innerHTML = "You";
 
+    // setAttribute method
+
     document.querySelectorAll('img')[0].setAttribute('src', userDiceImg);
 
-    // computer's dice throw
+    // COMPUTER's dice throw
+
+    // get a random number (from 1 to 6) for the computer's dice throw
 
     let computerDiceThrow = Math.floor(Math.random() * (6 - 1 + 1) + 1);
 
     console.log(computerDiceThrow);
 
+    // prepare the source to set for the img (computer's dice) in the DOM
+
     let computerDiceImg = './images/dice' + computerDiceThrow + '.png';
 
+    // over the game dice, a writing says who's the player
+
     document.getElementById("player-computer").innerHTML = "Computer";
+
+    // setAttribute method
 
     document.querySelectorAll('img')[1].setAttribute('src', computerDiceImg);
 
@@ -95,14 +117,28 @@ throwDice.addEventListener("click", function() {
     // let us discover who is the winner
 
     if ( userDiceThrow > computerDiceThrow ) {
+
         console.log("Complimenti, hai vinto !");
+
+        // a writins says the user has won the game
+
         resultDice.innerHTML = "Congratulations, you have won !"
+
     } else if ( computerDiceThrow > userDiceThrow ) {
+
         console.log("Siamo spiacenti, hai perso ");
-        resultDice.innerHTML = "Sorry, this time you have lost !"
+
+        // a writins says the user has lost the game
+
+        resultDice.innerHTML = "Sorry, this time you have lost !";
+
     } else {
-        console.log("E' un pareggio !")
-        resultDice.innerHTML = "What a thrilling challenge, it's a draw! !"
+
+        console.log("E' un pareggio !");
+
+        // a writins says there has been a draw in the game
+
+        resultDice.innerHTML = "What a thrilling challenge, it's a draw! !";
     }
 
 

@@ -12,13 +12,17 @@
 </head>
 <body>
 
+    <!-- EXERCISE 1 -->
+
     <section id="wrapper-email">
 
         <div class="access-container">
 
+            <!-- title -->
+
             <p class="text-center display-5">Slot Machine Login Area  🎰</p>
 
-            <!-- input field for email address -->
+            <!-- input field, with relative label, for email address -->
    
            <div>
                <label for="user-email-address" class="mx-2">Access to the reserved area</label>
@@ -39,36 +43,49 @@
 
     </section>
 
-   
+   <!-- EXERCISE 2 -->
 
     <section id="wrapper-dice">
 
+        <!-- title -->
+
         <p class="text-center display-5">Try your luck with D I C E 🎲 🎲</p>
+
+        <!-- .game-box container -->
 
         <div class="game-box d-flex justify-content-center align-items-center">
 
+            <!-- the user's dice will be shown in this area -->
+
             <div id="user" class="dice-area">
 
-                <div id="player-user" class="player my-2"></div>
+                <div id="player-user" class="my-2"></div>
                 <img />
     
             </div>
+
+            <!-- the computer's dice will be shown in this area -->
     
             <div id="computer" class="dice-area">
     
-                <div id="player-computer" class="player my-2"></div>
+                <div id="player-computer" class="my-2"></div>
                 <img />
     
             </div>
     
         </div>
 
+        <!-- press this button to try your luck ! -->
+
         <button id="throw-dice" type="submit" class="btn btn-warning d-flex justify-content-center">GO !</button>
+
+        <!-- the result of the game will be shown here -->
 
         <p class="text-center my-2" id="result-dice"></p>
 
     </section>
 
     <script src="./js/script.js"></script>
+
 </body>
 </html>
