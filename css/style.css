@@ -36,3 +36,17 @@ body {
     background-color: lightcyan;
     margin: 3rem auto;
 }
+
+.dice-area{
+    margin: 2rem 3rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.player {
+    
+}
+
+img {
+    width: 20px;
+}
