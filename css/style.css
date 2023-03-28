@@ -1,4 +1,3 @@
-
 /* UTILITIES */
 
 /* reset */
@@ -9,9 +8,13 @@
     box-sizing: border-box;
 }
 
+/* debug class */
+
 .debug {
     border: 1px solid red;
 }
+
+/* GENERAL */
 
 body {
     background-color: whitesmoke;
@@ -47,10 +50,6 @@ body {
 .game-box,
 #throw-dice {
     margin: 0 auto;
-}
-
-.player {
-
 }
 
 img {
